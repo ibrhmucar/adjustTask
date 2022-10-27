@@ -1,4 +1,10 @@
-# adjustTask
+<div align="center">
+<img src="adjust.png" width="auto"> 
+</div>
+
+
+
+# <h1 align="center">  Adjust Task 
 
 Task 1
 * Please go to https://en.wikipedia.org/w/index.php?search and do some
