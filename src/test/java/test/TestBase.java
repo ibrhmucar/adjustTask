@@ -52,7 +52,7 @@ public class TestBase {
         report.setSystemInfo("Browser", ConfigurationReader.get("browser"));
         report.setSystemInfo("OS",System.getProperty("os.name"));
         report.setSystemInfo("Tester","ibrahim uçar");
-        extentLogger = report.createTest("Micro Task");
+        extentLogger = report.createTest("Adjust Task");
 
     }
 
