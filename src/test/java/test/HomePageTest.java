@@ -19,7 +19,7 @@ public class HomePageTest extends TestBase {
       String actualURL = Driver.get().getCurrentUrl();
       Assert.assertTrue(expectedURL.equals(actualURL));
 
-      // 2- Write "SDET" to the main search bar and search. Verify that the word that "SDET" appears in searching result.
+      // 2- Write "SDET" to the main search bar and search. Verify that the word that "SDET" appears in the search result.
       srcpg.searchbar.sendKeys("SDET");
       srcpg.searchButton.click();
       String expectedWord = "SDET";
