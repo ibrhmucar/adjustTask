@@ -1,12 +1,8 @@
-package com.n11.test;
+package test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.n11.pages.MainPage;
-import com.n11.utilities.ConfigurationReader;
-import com.n11.utilities.Driver;
-import com.n11.utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,13 +11,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import utilities.ConfigurationReader;
+import utilities.Driver;
+import utilities.Utils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    MainPage mainPage = new MainPage();
+   // MainPage mainPage = new MainPage();
     protected WebDriver driver;
     protected Actions actions;
     protected WebDriverWait wait;
@@ -66,7 +65,7 @@ public class TestBase {
         actions = new Actions(driver);
         wait = new WebDriverWait(driver, 10);
         driver.get(ConfigurationReader.get("url"));
-        mainPage.acceptAllCookies.click();
+       // mainPage.acceptAllCookies.click();
         Utils.waitFor(2);
 
     }

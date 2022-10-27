@@ -1,7 +1,8 @@
-package com.n11.pages;
+package pages;
 
-import com.n11.utilities.Driver;
+
 import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 
 public abstract class BasePage {

@@ -1,4 +1,4 @@
-package com.n11.test;
+package test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
